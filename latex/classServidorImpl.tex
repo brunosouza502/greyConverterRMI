@@ -1,0 +1,57 @@
+\hypertarget{classServidorImpl}{\section{Servidor\-Impl Class Reference}
+\label{classServidorImpl}\index{Servidor\-Impl@{Servidor\-Impl}}
+}
+
+
+Classe de \hyperlink{classServidorImpl}{Servidor\-Impl}.  
+
+
+Inheritance diagram for Servidor\-Impl\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classServidorImpl}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classImage}{Image} \hyperlink{classServidorImpl_ab65c95968737a9f030e72c73838123a9}{Converter} (\hyperlink{classImage}{Image} c)  throws Remote\-Exception 
+\begin{DoxyCompactList}\small\item\em Converte imagem para tons de cinza. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe de \hyperlink{classServidorImpl}{Servidor\-Impl}. 
+
+Possui método \hyperlink{classServidorImpl_ab65c95968737a9f030e72c73838123a9}{Converter()} 
+
+\subsection{Member Function Documentation}
+\hypertarget{classServidorImpl_ab65c95968737a9f030e72c73838123a9}{\index{Servidor\-Impl@{Servidor\-Impl}!Converter@{Converter}}
+\index{Converter@{Converter}!ServidorImpl@{Servidor\-Impl}}
+\subsubsection[{Converter}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Image} Servidor\-Impl.\-Converter (
+\begin{DoxyParamCaption}
+\item[{{\bf Image}}]{c}
+\end{DoxyParamCaption}
+) throws Remote\-Exception\hspace{0.3cm}{\ttfamily [inline]}}}\label{classServidorImpl_ab65c95968737a9f030e72c73838123a9}
+
+
+Converte imagem para tons de cinza. 
+
+objeto buf
+
+objeto recebe imagem de c.\-get\-Image
+
+Conversão para tom de cinza
+
+cria novas cor (vermelho, azul, verde) dos pixels da imagem e converte para tom de cinza cada pixel com novo inteiro gray, recebendo (red+green+blue)/3
+
+Nova imagem
+
+retorna nova imagem formada em tom de cinza
+
+Implements \hyperlink{interfaceServidor}{Servidor}.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Servidor\-Impl.\-java\end{DoxyCompactItemize}

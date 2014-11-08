@@ -1,0 +1,32 @@
+import java.rmi.*;
+
+import java.awt.*;
+import java.awt.event.*;
+import java.awt.image.*;
+import java.io.*;
+import java.util.Random;
+import javax.imageio.*;
+import javax.swing.*;
+
+public class Image implements Serializable{
+    
+    int width;
+    int height;
+    int[] pixels;
+    
+	public Image(BufferedImage buf){//inicializa altura e largura
+            width = buf.getWidth();
+            height = buf.getHeight();
+            pixels = new int[width*height];
+            int[] tmp = buf.getRGB(0, 0, width, height, pixels, 0, width);
+            
+            System.out.println("Altura: "+buf.getHeight());
+	}
+        
+        public BufferedImage getImage(){
+            BufferedImage b = new BufferedImage(width,height, BufferedImage.TYPE_INT_RGB);
+            b.setRGB(0, 0, width, height, pixels, 0, width);
+            
+            return b;
+        }
+}

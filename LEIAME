@@ -1,0 +1,18 @@
+Execução:
+
+Compilar:
+
+javac Image.java
+javac ServidorImpl.java
+rmic ServidorImpl
+javac ServidorPrincipal.java
+javac Cliente.java
+
+Executando binder
+rmiregistry &
+
+Executando servidor:
+java ServidorPrincipal
+
+Executando cliente:
+java Cliente
